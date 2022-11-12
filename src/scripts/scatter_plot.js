@@ -1,2 +1,0 @@
-
-import ChampionData from "./data";

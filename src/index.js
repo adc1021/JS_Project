@@ -1,4 +1,10 @@
 import * as d3 from "d3";
+import Champ from "./scripts/data"
+
+window.Champ = Champ;
+Champ();
+
+
 var dataset1 = [
   [2, 21],
   [3, 22],
