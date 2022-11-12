@@ -1,19 +1,9 @@
 import * as d3 from "d3";
+import { compProfile } from "./data.js"
 
-const myScatterPlot = () => {
-  var dataset1 = [
-    [2, 21],
-    [3, 22],
-    [1, 25],
-    [1, 23],
-    [3, 20],
-    [1, 23],
-    [3, 29],
-    [6, 20],
-    [3, 23],
-    [5, 25],
-    [3, 17],
-  ];
+const myScatterPlot = (data) => {
+
+  const dataset1 = [[1, 25]];
 
   // Step 3
   var svg = d3.select("svg"),
@@ -83,3 +73,8 @@ const myScatterPlot = () => {
   }
 
   export default myScatterPlot;
+
+// //   .then( profile => {
+//   profile.record.wins
+    // profile.record.losses
+// })

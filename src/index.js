@@ -6,4 +6,17 @@ window.Champ = Champ;
 Champ();
 
 window.myScatterPlot = myScatterPlot;
-myScatterPlot();
+// myScatterPlot();
+
+const arr = [];
+
+const champIds = [290262]
+champIds.forEach( id => {
+  compProfile(id).then( data => {
+    arr.push(data);
+  })
+})
+
+console.log(arr);
+
+myScatterPlot(arr)
