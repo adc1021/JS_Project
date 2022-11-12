@@ -1,5 +1,5 @@
 
-import Champ from "./scripts/data"
+import {Champ, compProfile} from "./scripts/data"
 import myScatterPlot from "./scripts/scatter_plot"
 
 window.Champ = Champ;
