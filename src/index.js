@@ -10,13 +10,14 @@ window.myScatterPlot = myScatterPlot;
 
 const arr = [];
 
-const champIds = [290262]
+const champIds = [250145]
 champIds.forEach( id => {
   compProfile(id).then( data => {
-    arr.push(data);
+    debugger
+    arr.push([data]);
   })
 })
 
 console.log(arr);
 
-myScatterPlot(arr)
+myScatterPlot(arr);

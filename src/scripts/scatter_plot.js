@@ -2,7 +2,7 @@ import * as d3 from "d3";
 import { compProfile } from "./data.js"
 
 const myScatterPlot = (data) => {
-
+  
   const dataset1 = [[1, 25]];
 
   // Step 3
