@@ -12,9 +12,16 @@ window.myScatterPlot = myScatterPlot;
 
 
 const champIdPromiseArr = fighterJson.map( profile => {
-  const {wins, losses} = profile.record;
+  const {wins, losses} = profile.record; // [25, 1, "blue"]
   const color = profile.color;
-  return [wins, losses, color];
+  const name = profile.competitor.name;
+  return [wins, losses, color, name];
 })
 
-Promise.all(champIdPromiseArr).then( data => myScatterPlot(data));
+// const fighterName = fighterJson.map( profile => {
+//   const name = profile.competitor.name;
+//   return name;
+// })
+
+// Promise.all(champIdPromiseArr).then( data => myScatterPlot(data));
+myScatterPlot(champIdPromiseArr);

@@ -74,12 +74,13 @@ const myScatterPlot = (data) => {
       return yScale(d[0]);
     })
     .attr("r", 8)
-    // .attr("opacity", 0.5)
     .attr("transform", "translate(" + 100 + "," + 100 + ")")
     .style("fill", function (d) {
       return d[2];
     })
     .append("title")
+    .text(function (d) {
+      return d[3]})
 };
 
 export default myScatterPlot;
