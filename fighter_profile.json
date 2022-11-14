@@ -4,6 +4,7 @@
     "competitor": {
         "id": "sr:competitor:260623",
         "name": "Sterling, Aljamain",
+        "weight-class": "bantamweight",
         "abbreviation": "STE"
     },
     "info": {
@@ -25,13 +26,16 @@
         "wins": 22,
         "draws": 0,
         "losses": 3
-    }
+    },
+    "color": "green"
+
 },
 {
     "generated_at": "2022-11-13T16:48:18+00:00",
     "competitor": {
         "id": "sr:competitor:290262",
         "name": "Volkanovski, Alex",
+        "weight-class": "featherweight",
         "abbreviation": "VOL"
     },
     "info": {
@@ -53,13 +57,16 @@
         "wins": 25,
         "draws": 0,
         "losses": 1
-    }
+    },
+    "color": "yellow"
+
 },
 {
     "generated_at": "2022-11-13T16:50:24+00:00",
     "competitor": {
         "id": "sr:competitor:340506",
         "name": "Figueiredo, Deiveson",
+        "weight-class": "flyweight",
         "abbreviation": "FIG"
     },
     "info": {
@@ -81,13 +88,16 @@
         "wins": 21,
         "draws": 1,
         "losses": 2
-    }
+    },
+    "color": "pink"
+
 },
 {
     "generated_at": "2022-11-13T16:50:56+00:00",
     "competitor": {
         "id": "sr:competitor:250145",
         "name": "Ngannou, Francis",
+        "weight-class": "heavyweight",
         "abbreviation": "NGA"
     },
     "info": {
@@ -109,13 +119,15 @@
         "wins": 17,
         "draws": 0,
         "losses": 3
-    }
+    },
+    "color": "blue"
 },
 {
     "generated_at": "2022-11-13T16:51:24+00:00",
     "competitor": {
         "id": "sr:competitor:410485",
         "name": "Adesanya, Israel",
+        "weight-class": "middleweight",
         "abbreviation": "ADE"
     },
     "info": {
@@ -137,13 +149,16 @@
         "wins": 23,
         "draws": 0,
         "losses": 2
-    }
+    },
+    "color": "green"
+
 },
 {
     "generated_at": "2022-11-13T16:51:49+00:00",
     "competitor": {
         "id": "sr:competitor:256121",
         "name": "Edwards, Leon",
+        "weight-class": "welterweight",
         "abbreviation": "EDW"
     },
     "info": {
@@ -166,13 +181,16 @@
         "draws": 0,
         "losses": 3,
         "no_contests": 1
-    }
+    },
+    "color": "gray"
+
 },
 {
     "generated_at": "2022-11-13T16:52:20+00:00",
     "competitor": {
         "id": "sr:competitor:246051",
         "name": "Nunes, Amanda",
+        "weight-class": "bantamweight",
         "abbreviation": "NUN"
     },
     "info": {
@@ -194,13 +212,16 @@
         "wins": 22,
         "draws": 0,
         "losses": 5
-    }
+    },
+    "color": "purple"
+
 },
 {
     "generated_at": "2022-11-13T16:52:59+00:00",
     "competitor": {
         "id": "sr:competitor:246053",
         "name": "Shevchenko, Valentina",
+        "weight-class": "flyweight",
         "abbreviation": "SHE"
     },
     "info": {
@@ -222,13 +243,16 @@
         "wins": 23,
         "draws": 0,
         "losses": 3
-    }
+    },
+    "color": "white"
+
 },
 {
     "generated_at": "2022-11-13T16:53:32+00:00",
     "competitor": {
         "id": "sr:competitor:253353",
         "name": "Esparza, Carla",
+        "weight-class": "strawweight",
         "abbreviation": "ESP"
     },
     "info": {
@@ -250,7 +274,9 @@
         "wins": 20,
         "draws": 0,
         "losses": 7
-    }
+    },
+    "color": "aqua"
+
 },
 
 {
@@ -258,6 +284,7 @@
     "competitor": {
         "id": "sr:competitor:251835",
         "name": "Makhachev, Islam",
+        "weight-class": "lightweight",
         "abbreviation": "MAK"
     },
     "info": {
@@ -278,5 +305,41 @@
         "wins": 23,
         "draws": 0,
         "losses": 1
-    }
-}]
+    },
+    "color": "blueviolet"
+
+},
+
+{
+    "generated_at": "2022-11-13T16:59:35+00:00",
+    "competitor": {
+        "id": "sr:competitor:000000",
+        "name": "Prochazka, Jiri",
+        "weight-class": "light-heavyweight",
+        "abbreviation": ""
+    },
+    "info": {
+        "birth_city": "Znojmo",
+        "birth_state": "-",
+        "birth_country": "Czechoslovakia",
+        "birth_country_code": "CZE",
+        "birth_date": "1992-10-14",
+        "fighting_out_of_city": "Brno",
+        "fighting_out_of_country": "Czechoslovakia",
+        "fighting_out_of_country_code": "CZE",
+        "fighting_out_of_state": "-",
+        "reach": 203,
+        "height": 193,
+        "weight": 93,
+        "nickname": "Denisa"
+    },
+    "record": {
+        "wins": 29,
+        "draws": 1,
+        "losses": 3
+    },
+    "color": "lightgreen"
+}
+
+
+]
