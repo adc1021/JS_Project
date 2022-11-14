@@ -52,15 +52,16 @@ const myScatterPlot = (data) => {
     .style("font-size", 12)
     .text("WINS");
 
-
+//constrcuts bottom oriented axis
   g.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(xScale));
 
+    // constructs left oriented axis
   g.append("g").call(d3.axisLeft(yScale));
 
 
-
+const dots =
   svg
     .append("g")
     .selectAll("dot")
@@ -78,9 +79,23 @@ const myScatterPlot = (data) => {
     .style("fill", function (d) {
       return d[2];
     })
+    .on('mouseover', function() {
+      d3.select(this)
+      .transition()
+      .duration('300')
+      .attr("r", 12)
+    })
+    .on('mouseout', function(){
+      d3.select(this)
+      .transition()
+      .duration('300')
+      .attr('r', 8)
+    })
     .append("title")
     .text(function (d) {
       return d[3]})
+
+
 };
 
 export default myScatterPlot;
