@@ -1,6 +1,7 @@
 import * as d3 from "d3";
 import { compProfile } from "./data.js";
 import fighterJson from "../../fighter_profile.json"
+import { csvFormatBody } from "d3";
 
 const myScatterPlot = (data) => {
   const dataset1 = data; // [[losses, wins]]
@@ -90,6 +91,11 @@ const dots =
       .transition()
       .duration('300')
       .attr('r', 8)
+    })
+    .on('click', function(){
+      d3.select('body')
+        .append('div')
+        
     })
     .append("title")
     .text(function (d) {
