@@ -4,7 +4,18 @@ import fighterJson from "../../fighter_profile.json";
 import { csvFormatBody } from "d3";
 import { eventHandler } from "./click_event.js";
 
-const myScatterPlot = (data) => {
+const myScatterPlot = (data) => { // 2d array
+
+  // let fighterArr = data.map( profile => {
+  //   const competitor = profile.competitor;
+  //   const info = profile.info;
+  //   const record = profile.record;
+  //   const color = profile.color;
+
+  //   return [competitor, info, record, color]
+  // })
+  // console.log(fighterArr)
+  // const dataset1 = fighterArr;
   const dataset1 = data;
 
   console.log();
@@ -21,15 +32,15 @@ const myScatterPlot = (data) => {
     .attr("transform", "translate(" + 100 + "," + 100 + ")");
 
   // Title
-  svg
-    .append("text")
-    .attr("x", width / 2 + 100)
-    .attr("y", 100)
-    .attr("text-anchor", "middle")
-    .style("font-family", "sans-serif")
-    .style("font-size", 20)
-    .style("font-weight", "bold")
-    .text("UFC Champions");
+  // svg
+  //   .append("text")
+  //   .attr("x", width / 2 + 100)
+  //   .attr("y", 100)
+  //   .attr("text-anchor", "middle")
+  //   .style("font-family", "sans-serif")
+  //   .style("font-size", 20)
+  //   .style("font-weight", "bold")
+  //   .text("UFC Champions");
 
   // X label
   svg
@@ -47,6 +58,7 @@ const myScatterPlot = (data) => {
     .append("text")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(60," + height + ")rotate(-90)")
+    .attr("x", height / 2 - 100)
     .style("font-family", "sans-serif")
     .style("font-weight", "bold")
     .style("font-size", 12)
@@ -67,10 +79,10 @@ const myScatterPlot = (data) => {
     .enter()
     .append("circle") // adds circle tag as child of g
     .attr("cx", function (d) {
-      return xScale(d[1]);
+      return xScale(d[1]);//wins
     })
     .attr("cy", function (d) {
-      return yScale(d[0]);
+      return yScale(d[0]); //losses
     })
     .attr("r", 8)
     .attr("transform", "translate(" + 100 + "," + 100 + ")")

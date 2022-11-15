@@ -7,9 +7,8 @@ const champIdPromiseArr = fighterJson.map( profile => {
   const color = profile.color;
   const name = profile.competitor.name;
   return [wins, losses, color, name];
+  // return profile
 })
 
-
-
-// Promise.all(champIdPromiseArr).then( data => myScatterPlot(data));
 myScatterPlot(champIdPromiseArr);
+// myScatterPlot(fighterJson)

@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   background-color: #111;
-  opacity: 0.5;
+  opacity: 0.8;
   padding-top: 50px;
   transition: 1s;
 }
@@ -23,6 +23,21 @@
   color: green;
 }
 
+.sidebar #fighter-name {
+  position: absolute;
+  top: 10;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 20px;
+  color: white;
+}
+
+.sidebar #fighter-image {
+  position: absolute;
+  top: 100;
+  right: 0px;
+}
+
 #centered {
   position: sticky;
   left: 30%;
@@ -34,4 +49,22 @@ circle {
 
 #closebtn:hover {
   color: rgba(255, 30, 0, 0.672);
+}
+
+#author-info {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 0, 8, 0.893);
+  padding: 50px;
+  color: white;
+  font-size: 5px;
+}
+
+h1.main {
+  font-size: 20px;
+  text-align: center;
+}
+
+.links {
+  font-size: 25px;
 }
