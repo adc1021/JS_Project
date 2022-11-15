@@ -1,17 +1,17 @@
 import * as d3 from "d3";
 import { compProfile } from "./data.js";
-import fighterJson from "../../fighter_profile.json"
+import fighterJson from "../../fighter_profile.json";
 import { csvFormatBody } from "d3";
+import eventHandler from "./click_event.js";
 
 const myScatterPlot = (data) => {
   const dataset1 = data; // [[losses, wins]]
   // const randomColor = Math.floor(Math.random()*16777215).toString(16);
-  console.log()
+  console.log();
   const svg = d3.select("svg"),
     margin = 200,
     width = svg.attr("width") - margin, //300
     height = svg.attr("height") - margin; //200
-
 
   const xScale = d3.scaleLinear().domain([0, 30]).range([0, width]),
     yScale = d3.scaleLinear().domain([0, 30]).range([height, 0]);
@@ -19,7 +19,6 @@ const myScatterPlot = (data) => {
   const g = svg
     .append("g")
     .attr("transform", "translate(" + 100 + "," + 100 + ")");
-
 
   // Title
   svg
@@ -53,17 +52,15 @@ const myScatterPlot = (data) => {
     .style("font-size", 12)
     .text("WINS");
 
-//constrcuts bottom oriented axis
+  //constrcuts bottom oriented axis
   g.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(xScale));
 
-    // constructs left oriented axis
+  // constructs left oriented axis
   g.append("g").call(d3.axisLeft(yScale));
 
-
-const dots =
-  svg
+  const dots = svg
     .append("g")
     .selectAll("dot")
     .data(dataset1)
@@ -80,28 +77,18 @@ const dots =
     .style("fill", function (d) {
       return d[2];
     })
-    .on('mouseover', function() {
-      d3.select(this)
-      .transition()
-      .duration('300')
-      .attr("r", 12)
+    .style("stroke", 'black')
+    .on("mouseover", function () {
+      d3.select(this).transition().duration("300").attr("r", 12);
     })
-    .on('mouseout', function(){
-      d3.select(this)
-      .transition()
-      .duration('300')
-      .attr('r', 8)
+    .on("mouseout", function () {
+      d3.select(this).transition().duration("300").attr("r", 8);
     })
-    .on('click', function(){
-      d3.select('body')
-        .append('div')
-        
-    })
+    .on("click", eventHandler)
     .append("title")
     .text(function (d) {
-      return d[3]})
-
-
+      return d[3];
+    });
 };
 
 export default myScatterPlot;
