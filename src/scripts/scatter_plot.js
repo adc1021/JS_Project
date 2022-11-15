@@ -2,11 +2,11 @@ import * as d3 from "d3";
 import { compProfile } from "./data.js";
 import fighterJson from "../../fighter_profile.json";
 import { csvFormatBody } from "d3";
-import eventHandler from "./click_event.js";
+import { eventHandler } from "./click_event.js";
 
 const myScatterPlot = (data) => {
-  const dataset1 = data; // [[losses, wins]]
-  // const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  const dataset1 = data;
+
   console.log();
   const svg = d3.select("svg"),
     margin = 200,
