@@ -8,5 +8,11 @@ import * as d3 from "d3";
 export default function eventHandler(e) {
   const dot = e.target;
   dot.style.stroke = "red";
-  console.log(dot);
+  document.getElementById("mySidebar").style.width = '500px'
+  
 }
+
+// function closeNav() {
+//   document.getElementById("mySidebar").style.width = "0";
+//   document.getElementById("main").style.marginLeft = "0";
+// }

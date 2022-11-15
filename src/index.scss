@@ -1,15 +1,29 @@
-#navBar{
-    display: flex;
-    flex-direction: right;
-    width: 500px;
-    height: 100vh;
-    background-color: #252a32;
-}
 
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    //css tranform
-    //instead of hidden it would be off screen
-    // how to make a sidebar drawer
-}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: .5;
+    padding-top: 50px;
+    transition: 1s;
+  }
+
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+  #main {
+    transition: margin-right .5s;
+    padding: 20px;
+  }
