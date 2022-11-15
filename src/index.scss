@@ -14,16 +14,10 @@
   }
 
 
-  .sidebar .closebtn {
+  .sidebar #closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-
-
-  #main {
-    transition: margin-right .5s;
-    padding: 20px;
   }

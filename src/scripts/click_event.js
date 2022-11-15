@@ -19,6 +19,7 @@ closeBtn.addEventListener("click", closeNav)
 
 export function closeNav() {
   const sideBar = document.getElementById("mySidebar");
+
   sideBar.style.width = "0px";
 }
 

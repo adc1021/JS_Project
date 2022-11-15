@@ -92,3 +92,4 @@ const myScatterPlot = (data) => {
 };
 
 export default myScatterPlot;
+
