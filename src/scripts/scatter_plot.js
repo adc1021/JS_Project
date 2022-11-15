@@ -13,8 +13,8 @@ const myScatterPlot = (data) => {
     width = svg.attr("width") - margin, //300
     height = svg.attr("height") - margin; //200
 
-  const xScale = d3.scaleLinear().domain([0, 30]).range([0, width]),
-    yScale = d3.scaleLinear().domain([0, 30]).range([height, 0]);
+    const xScale = d3.scaleLinear().domain([0, 10]).range([0, width]),
+    yScale = d3.scaleLinear().domain([0, 40]).range([height, 0]);
 
   const g = svg
     .append("g")
@@ -92,4 +92,3 @@ const myScatterPlot = (data) => {
 };
 
 export default myScatterPlot;
-

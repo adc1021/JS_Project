@@ -1,23 +1,37 @@
 
 
 .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    opacity: .5;
-    padding-top: 50px;
-    transition: 1s;
-  }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: .5;
+  padding-top: 50px;
+  transition: 1s;
+}
 
 
-  .sidebar #closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+.sidebar #closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: green;
+}
+
+#centered {
+  position: sticky;
+  left: 30%;
+}
+
+circle {
+  cursor: pointer;
+}
+
+#closebtn:hover {
+  color: rgba(255, 30, 0, 0.672);
+}

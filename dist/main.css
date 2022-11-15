@@ -14,15 +14,24 @@
   transition: 1s;
 }
 
-.sidebar .closebtn {
+.sidebar #closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  color: green;
 }
 
-#main {
-  transition: margin-right 0.5s;
-  padding: 20px;
+#centered {
+  position: sticky;
+  left: 30%;
+}
+
+circle {
+  cursor: pointer;
+}
+
+#closebtn:hover {
+  color: rgba(255, 30, 0, 0.672);
 }
