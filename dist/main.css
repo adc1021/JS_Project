@@ -108,3 +108,7 @@ h1.main {
 #linkedin {
   display: inline-block;
 }
+
+a:hover {
+  color: black;
+}

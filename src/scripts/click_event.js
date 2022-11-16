@@ -11,12 +11,13 @@ export function eventHandler(e) {
 }
 
 function renderData(data) {
-  let fighterName = data.competitor.name.split(',')
+  let fighterNameDiv = document.getElementById("fighter-name");
+  fighterNameDiv.innerHTML = "";
+  let fighterName = data.competitor.name.split(',');
   let lastName =fighterName[0];
   let firstName =fighterName[1];
-  let name = document.createTextNode(`${firstName} ${lastName}`)
-  console.log(name);
-  let fighterNameDiv = document.getElementById("fighter-name");
+  let name = document.createTextNode(`${firstName} ${lastName}`);
+  // console.log(name);
   fighterNameDiv.appendChild(name);
 }
 
@@ -25,7 +26,7 @@ closeBtn.addEventListener("click", closeNav)
 
 export function closeNav() {
   const sideBar = document.getElementById("mySidebar");
-
+  let fighterNameDiv = document.getElementById("fighter-name");
   sideBar.style.width = "0px";
 }
 
