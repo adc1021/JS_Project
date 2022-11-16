@@ -5,20 +5,18 @@ import { csvFormatBody } from "d3";
 import { eventHandler } from "./click_event.js";
 
 const myScatterPlot = (data) => { // 2d array
+  // console.log(data)
+  let fighterArr = data.map( profile => {
+    const competitor = profile.competitor;
+    const info = profile.info;
+    const record = profile.record;
+    const color = profile.color;
 
-  // let fighterArr = data.map( profile => {
-  //   const competitor = profile.competitor;
-  //   const info = profile.info;
-  //   const record = profile.record;
-  //   const color = profile.color;
+    return {competitor, info, record, color}
+  })
 
-  //   return [competitor, info, record, color]
-  // })
-  // console.log(fighterArr)
-  // const dataset1 = fighterArr;
-  const dataset1 = data;
+  const dataset1 = fighterArr;
 
-  console.log();
   const svg = d3.select("svg"),
     margin = 200,
     width = svg.attr("width") - margin, //300
@@ -30,6 +28,8 @@ const myScatterPlot = (data) => { // 2d array
   const g = svg
     .append("g")
     .attr("transform", "translate(" + 100 + "," + 100 + ")");
+
+
 
   // Title
   // svg
@@ -79,15 +79,16 @@ const myScatterPlot = (data) => { // 2d array
     .enter()
     .append("circle") // adds circle tag as child of g
     .attr("cx", function (d) {
-      return xScale(d[1]);//wins
+      return xScale(d.record.losses);//losses
     })
     .attr("cy", function (d) {
-      return yScale(d[0]); //losses
+      return yScale(d.record.wins); //wins
     })
     .attr("r", 8)
     .attr("transform", "translate(" + 100 + "," + 100 + ")")
     .style("fill", function (d) {
-      return d[2];
+
+      return d.color;
     })
     .style("stroke", 'black')
     .on("mouseover", function () {
@@ -99,7 +100,7 @@ const myScatterPlot = (data) => { // 2d array
     .on("click", eventHandler)
     .append("title")
     .text(function (d) {
-      return d[3];
+      return d.competitor.name;
     });
 };
 
