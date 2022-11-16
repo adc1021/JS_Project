@@ -24,22 +24,22 @@
 
 
 
-// export const compProfile = (id) => {
-//   const profileUrl =
-//   `https://cryptic-beyond-07137.herokuapp.com/http://api.sportradar.us/mma/trial/v2/en/competitors/sr:competitor:${id}/profile.json?api_key=pzkdvmv7t4f6qdsxmfapuv8s`
-//   // to make fetch requests to specific champions Fighter profile.
-//   return fetch(profileUrl)
-//   .then(response => {
-//     if(response.ok) {
-//       return response.json();
-//     } else {
-//       throw response
-//     }
-//   })
-//   .then( profile => {
-//     return [profile.record.wins, profile.record.losses]
-//   })
-// }
+export const compProfile = (id) => {
+  const profileUrl =
+  `https://cryptic-beyond-07137.herokuapp.com/http://api.sportradar.us/mma/trial/v2/en/competitors/sr:competitor:${id}/profile.json?api_key=pzkdvmv7t4f6qdsxmfapuv8s`
+  // to make fetch requests to specific champions Fighter profile.
+  return fetch(profileUrl)
+  .then(response => {
+    if(response.ok) {
+      return response.json();
+    } else {
+      throw response
+    }
+  })
+  .then( profile => {
+    return [profile.record.wins, profile.record.losses]
+  })
+}
 
 // compProfile(260623);
 // compProfile(290262);
