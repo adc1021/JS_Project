@@ -1,19 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <script src="./dist/main.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/2687a23fd5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./dist/main.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2736/2736150.png">
+</head>
+<body>
+  <header id="author-info">
+   <a href="https://github.com/adc1021" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <h1 class="main"><strong>UNDISPUTED</strong></h1>
+    <a href="https://www.linkedin.com/in/anthony-chiodi-b5a8a9167" target="_blank" id><i class="fa-brands fa-linkedin"></i></a>
+  </header>
 
-<html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./dist/main.css" />
-    <script src="./dist/main.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <title>A League of Their Own</title>
-  </head>
 
-  <body>
-    <div id="main"></div>
-  
-  </body>
+  <!-- <a href="" id="info"><i class="fa-solid fa-circle-info"></i></a> -->
 
+  <div class="container">
+    <svg width="800" height="800" class="graph" id="centered"></svg>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" id="closebtn">&times;</a>
+      <!-- <a href="#" id="fighter-name">Jiri</a> -->
+      <img src="https://www.sherdog.com/image_crop/200/300/_images/fighter/20220331052001_Jiri_Prochazka_ff.JPG" alt="" id="fighter-image">
+      <div id="fighter-name"></div>
+      <div id="record">
+        <strong>WINS: 29 LOSSES: 3</strong>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>

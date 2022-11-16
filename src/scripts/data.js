@@ -1,86 +1,53 @@
+// export const Champ = () => {
+//   const srUrl =
+//     "https://cryptic-beyond-07137.herokuapp.com/http://api.sportradar.us/mma/trial/v2/en/champions.json?api_key=pzkdvmv7t4f6qdsxmfapuv8s";
+//   fetch(srUrl)
+//     .then((response) => {
+//       if (response.ok) {
+//         return response.json();
+//       } else {
+//         throw response;
+//       }
+//     })
+//     .then((data) => {
+//       const weight_classes = data.categories[0].weight_classes;
+//       const arr = [];
+//       weight_classes.forEach((fighter) => {
+//         arr.push(fighter);
+//         // console.log(fighter);
+//       });
+//       return arr;
+//     })
+//     .catch((errorResponse) => console.error(errorResponse));
+// };
 
-const ChampionJson = {
-    "generated_at": "2022-11-11T18:44:36+00:00",
-    "categories": [{
-        "id": "sr:category:1089",
-        "name": "UFC",
-        "weight_classes": [{
-            "description": "bantamweight",
-            "competitor": {
-                "id": "sr:competitor:260623",
-                "name": "Sterling, Aljamain",
-                "abbreviation": "STE"
-            }
-        }, {
-            "description": "featherweight",
-            "competitor": {
-                "id": "sr:competitor:290262",
-                "name": "Volkanovski, Alex",
-                "abbreviation": "VOL"
-            }
-        }, {
-            "description": "flyweight",
-            "competitor": {
-                "id": "sr:competitor:340506",
-                "name": "Figueiredo, Deiveson",
-                "abbreviation": "FIG"
-            }
-        }, {
-            "description": "heavyweight",
-            "competitor": {
-                "id": "sr:competitor:250145",
-                "name": "Ngannou, Francis",
-                "abbreviation": "NGA"
-            }
-        }, {
-            "description": "middleweight",
-            "competitor": {
-                "id": "sr:competitor:410485",
-                "name": "Adesanya, Israel",
-                "abbreviation": "ADE"
-            }
-        }, {
-            "description": "welterweight",
-            "competitor": {
-                "id": "sr:competitor:256121",
-                "name": "Edwards, Leon",
-                "abbreviation": "EDW"
-            }
-        }, {
-            "description": "womens_bantamweight",
-            "competitor": {
-                "id": "sr:competitor:246051",
-                "name": "Nunes, Amanda",
-                "abbreviation": "NUN"
-            }
-        }, {
-            "description": "womens_featherweight",
-            "competitor": {
-                "id": "sr:competitor:246051",
-                "name": "Nunes, Amanda",
-                "abbreviation": "NUN"
-            }
-        }, {
-            "description": "womens_flyweight",
-            "competitor": {
-                "id": "sr:competitor:246053",
-                "name": "Shevchenko, Valentina",
-                "abbreviation": "SHE"
-            }
-        }, {
-            "description": "womens_strawweight",
-            "competitor": {
-                "id": "sr:competitor:253353",
-                "name": "Esparza, Carla",
-                "abbreviation": "ESP"
-            }
-        }]
-    }, {
-        "id": "sr:category:1090",
-        "name": "Bellator"
-    }]
-};
 
-ChampionData = JSON.parse(ChampionJson);
 
-export default ChampionData; 
+
+export const compProfile = (id) => {
+  const profileUrl =
+  `https://cryptic-beyond-07137.herokuapp.com/http://api.sportradar.us/mma/trial/v2/en/competitors/sr:competitor:${id}/profile.json?api_key=pzkdvmv7t4f6qdsxmfapuv8s`
+  // to make fetch requests to specific champions Fighter profile.
+  return fetch(profileUrl)
+  .then(response => {
+    if(response.ok) {
+      return response.json();
+    } else {
+      throw response
+    }
+  })
+  .then( profile => {
+    return [profile.record.wins, profile.record.losses]
+  })
+}
+
+// compProfile(260623);
+// compProfile(290262);
+// compProfile(340506);
+//compProfile(250145);
+//compProfile(410485)
+//compProfile(256121)
+//compProfile(246051)
+//compProfile(246051)
+//compProfile(246053)
+//compProfile(253353)
