@@ -14,3 +14,9 @@ Undisputed is a scatter plot that compares the records of current UFC Champions 
 - webpack bundle and transpile the source JavaScript code. 
 - npm to manage project dependencies
 
+## Future Implementations: 
+- I hope to be able to 
+
+## CC Licensing:
+- Favicon boxing glove by flaticon.com
+- personal link icons (github/linkedin/info) provided by Font Awesome. 
