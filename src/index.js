@@ -1,5 +1,6 @@
 import myScatterPlot from "./scripts/scatter_plot"
 import fighterJson from "../fighter_profile.json"
+import { csvFormatBody } from "d3";
 
 
 // const champIdPromiseArr = fighterJson.map( profile => {
@@ -13,3 +14,12 @@ import fighterJson from "../fighter_profile.json"
 // myScatterPlot(champIdPromiseArr);
 // console.log(fighterJson)
 myScatterPlot(fighterJson);
+
+
+let closeBtn = document.getElementById('modal__close');
+console.log(closeBtn)
+closeBtn.addEventListener("click", () => {
+  let modal = document.getElementById('modal');
+
+  document.body.removeChild(modal);
+});
