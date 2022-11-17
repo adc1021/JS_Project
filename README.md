@@ -7,7 +7,7 @@ Undisputed is a scatter plot that compares the records of current UFC Champions 
 - hover over each dot to see which fighter the dot will represent 
 - click on each fighter data point to open sidebar displaying more information
 
-##Technologies, Libraries, APIs:
+## Technologies, Libraries, APIs:
 - SportsRadar API 
 - D3.js library 
 - Vanilla JavaScript
