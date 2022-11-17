@@ -9,6 +9,7 @@ export function eventHandler(e) {
   sideBar.style.width = '500px'
   _nameDisplay(data);
   _imgDisplay(data);
+  _recordDisplay(data);
 }
 
 function _nameDisplay(data) {
@@ -26,6 +27,16 @@ function _imgDisplay(data) {
   fighterImgDiv.setAttribute('src', data.img);
   fighterImgDiv.setAttribute('height', 300);
   fighterImgDiv.setAttribute('width', 300);
+}
+
+function _recordDisplay(data) {
+  let recordTag = document.getElementById('record');
+  recordTag.innerHTML = ""
+  let wins = data.record.wins;
+  let losses = data.record.losses;
+  let draws = data.record.draws;
+  let record = document.createTextNode(`${wins}-${losses}-${draws}(W-L-D)`)
+  recordTag.appendChild(record)
 }
 
 const closeBtn = document.getElementById("closebtn")
