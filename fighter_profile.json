@@ -27,8 +27,8 @@
         "draws": 0,
         "losses": 3
     },
-    "color": "darkorange"
-
+    "color": "darkorange",
+    "img": "https://cdn.vox-cdn.com/thumbor/BzL77Qb0Xmiolg0B8GorvvoUzvA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24136718/1244152966.jpg"
 
 },
 {
@@ -59,8 +59,8 @@
         "draws": 0,
         "losses": 1
     },
-    "color": "yellow"
-
+    "color": "yellow",
+    "img": "https://cdn.vox-cdn.com/thumbor/gmP35tJ5sOePYdmLEFLqf4egKvY=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23177619/1235507372.jpg"
 },
 {
     "generated_at": "2022-11-13T16:50:24+00:00",
@@ -90,7 +90,8 @@
         "draws": 1,
         "losses": 2
     },
-    "color": "pink"
+    "color": "pink",
+    "img": "https://cdn.vox-cdn.com/thumbor/ceyOqnD2cPehkOGZELUqrU9Udg0=/0x0:4124x3040/1200x800/filters:focal(1798x818:2456x1476)/cdn.vox-cdn.com/uploads/chorus_image/image/70378938/usa_today_16248282.0.jpg"
 
 },
 {
@@ -121,7 +122,8 @@
         "draws": 0,
         "losses": 3
     },
-    "color": "blue"
+    "color": "blue",
+    "img": "https://dmxg5wxfqgb4u.cloudfront.net/styles/card_advance_small_280x356/s3/2022-01/012222-ufc-270-ngannou-vs-gane-francis-ngannou-octagon-interview.jpg?itok=ZuStlrmd"
 },
 {
     "generated_at": "2022-11-13T16:51:24+00:00",
@@ -151,7 +153,8 @@
         "draws": 0,
         "losses": 2
     },
-    "color": "green"
+    "color": "green",
+    "img": "https://cdn.vox-cdn.com/thumbor/HQSMZ2eDXJjIK8LCrHc2YBkEafc=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21924804/1276892785.jpg.jpg"
 
 },
 {
@@ -183,7 +186,8 @@
         "losses": 3,
         "no_contests": 1
     },
-    "color": "gray"
+    "color": "gray",
+    "img": "https://fansided.com/wp-content/uploads/getty-images/2022/08/1242626336.jpeg"
 
 },
 {
@@ -214,7 +218,8 @@
         "draws": 0,
         "losses": 5
     },
-    "color": "navy"
+    "color": "navy",
+    "img": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-12/0bc89f79-fead-4048-98a4-daa3e10d1d04%252FNUNES_AMANDA_L_BELT_12-11.png?itok=n_Qiatj-"
 
 },
 {
@@ -245,14 +250,14 @@
         "draws": 0,
         "losses": 3
     },
-    "color": "white"
-
+    "color": "white",
+    "img": "https://staticg.sportskeeda.com/editor/2018/09/dbcc3-1536168539-800.jpg"
 },
 {
     "generated_at": "2022-11-13T16:53:32+00:00",
     "competitor": {
         "id": "sr:competitor:253353",
-        "name": "Esparza, Carla",
+        "name": "Weili, Zhang",
         "weight-class": "strawweight",
         "abbreviation": "ESP"
     },
@@ -276,8 +281,8 @@
         "draws": 0,
         "losses": 7
     },
-    "color": "aqua"
-
+    "color": "aqua",
+    "img": "http://image5.sixthtone.com/image/5/54/660.jpg"
 },
 
 {
@@ -307,8 +312,8 @@
         "draws": 0,
         "losses": 1
     },
-    "color": "blueviolet"
-
+    "color": "blueviolet",
+    "img": "https://cdn.vox-cdn.com/thumbor/BzL77Qb0Xmiolg0B8GorvvoUzvA=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24136718/1244152966.jpg"
 },
 
 {
@@ -339,7 +344,8 @@
         "draws": 1,
         "losses": 3
     },
-    "color": "lightgreen"
+    "color": "lightgreen",
+    "img": "https://www.sherdog.com/image_crop/200/300/_images/fighter/20220331052001_Jiri_Prochazka_ff.JPG"
 }
 
 

@@ -11,4 +11,5 @@ import fighterJson from "../fighter_profile.json"
 // })
 
 // myScatterPlot(champIdPromiseArr);
+// console.log(fighterJson)
 myScatterPlot(fighterJson);
