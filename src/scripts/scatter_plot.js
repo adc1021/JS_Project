@@ -11,8 +11,9 @@ const myScatterPlot = (data) => { // 2d array
     const info = profile.info;
     const record = profile.record;
     const color = profile.color;
+    const img = profile.img;
 
-    return {competitor, info, record, color}
+    return {competitor, info, record, color, img};
   })
 
   const dataset1 = fighterArr;
