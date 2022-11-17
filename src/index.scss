@@ -78,18 +78,27 @@ circle {
 
 #author-info {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   background-color: rgba(255, 0, 8, 0.893);
   color: white;
   font-size: 5px;
 }
 
+#button__holder {
+  margin-right: auto;
+
+}
+
 h1.main {
   font-size: 30px;
   font-family: copperplate;
   text-align: center;
+  margin-right: auto;
+  padding-right: 100px;
 }
+
 
 
 #author-info a {
@@ -98,6 +107,8 @@ h1.main {
   color: white;
   margin: 15px;
 }
+
+
 
 #info {
   color: black;
