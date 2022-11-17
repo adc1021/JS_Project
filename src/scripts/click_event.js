@@ -11,13 +11,13 @@ export function eventHandler(e) {
 }
 
 function renderData(data) {
+  let fighterName = data.competitor.name.split(',')
   let fighterNameDiv = document.getElementById("fighter-name");
-  fighterNameDiv.innerHTML = "";
-  let fighterName = data.competitor.name.split(',');
+  fighterNameDiv.innerHTML = ""
   let lastName =fighterName[0];
   let firstName =fighterName[1];
-  let name = document.createTextNode(`${firstName} ${lastName}`);
-  // console.log(name);
+  let name = document.createTextNode(`${firstName} ${lastName}`)
+  console.log(name);
   fighterNameDiv.appendChild(name);
 }
 
